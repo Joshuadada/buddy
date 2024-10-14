@@ -1,11 +1,8 @@
-// import BellIcon from '../assets/icons/bell-icon.svg'
-// import DownArr from '../assets/icons/down-arr.svg'
 import SearchIcon from "../assets/icons/searchIcon.svg"
 
 import { Input } from "./ui/input";
 
 const Header = ({ pageTitle, setSidebarStatus }: { pageTitle: string, setSidebarStatus: any }) => {
-
     return (
         <div className="flex items-center justify-between gap-2 py-2 md:py-4 lg:py-6 sticky top-0 bg-[#F8FAFC] z-40">
             <div className='flex items-center gap-2 mb-2'>
@@ -18,7 +15,7 @@ const Header = ({ pageTitle, setSidebarStatus }: { pageTitle: string, setSidebar
 
             <div className="flex items-center gap-2 md:gap-3 lg:gap-4">
                 <div className="hidden sm:block sm:w-72 md:w-80 lg:w-96">
-                    <Input className="w-full" type="search" icon={SearchIcon} placeholder="Search" />
+                    <Input className="w-full bg-white border-none rounded-lg md:rounded-xl lg:rounded-2xl" type="search" icon={SearchIcon} placeholder="Search" />
                 </div>
 
                 <svg className="cursor-pointer h-10 lg:h-12 w-10 lg:w-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
