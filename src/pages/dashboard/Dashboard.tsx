@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Outlet } from "react-router-dom";
 import Header from "@/components/Header";
 import { Sidebar } from "@/components/Sidebar";
-import { currentPage, navItems } from "@/utils";
+import { currentPage, navItems } from "@/utilities";
 
 const Dashboard = () => {
   const [pageTitle, setPageTitle] = useState(currentPage());
