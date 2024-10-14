@@ -3,18 +3,21 @@ import {
   Navigate,
   RouterProvider,
 } from "react-router-dom";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import Root from "./pages/Root";
-import Auth from "./pages/auth/Auth";
-import SignupSocial from "./pages/auth/children/SignupSocial";
-import Signup from "./pages/auth/children/Signup";
-import Login from "./pages/auth/children/Login";
-import ConfirmEmail from "./pages/auth/children/ConfirmEmail";
-import EmailVerified from "./pages/auth/children/EmailVerified";
-import VerifyEmail from "./pages/auth/children/VerifyEmail";
-import Dashboard from "./pages/dashboard/Dashboard";
-import MyPortfolio from "./pages/dashboard/children/MyPortfolio";
+
+import { AuthRoute, ProtectedRoute } from "./guards";
+import { AuthLayout, DashboardLayout, Login, Portfolio, Signup } from "./pages";
 
 function App() {
+  const queryClient = new QueryClient({
+    defaultOptions: {
+      queries: {
+        refetchOnWindowFocus: false,
+      },
+    },
+  });
   const router = createBrowserRouter([
     {
       path: "/",
@@ -22,41 +25,34 @@ function App() {
       children: [
         {
           path: "",
-          element: <Auth />,
+          element: (
+            <AuthRoute>
+              <AuthLayout />
+            </AuthRoute>
+          ),
           children: [
             {
               path: "",
               element: <Navigate to="signup" replace={true} />,
             },
-            {
-              path: "signup",
-              element: <SignupSocial />,
-            },
+
             {
               path: "login",
               element: <Login />,
             },
             {
-              path: "signup-email",
+              path: "signup",
               element: <Signup />,
-            },
-            {
-              path: "confirm-email",
-              element: <ConfirmEmail />,
-            },
-            {
-              path: "email-verified",
-              element: <EmailVerified />,
-            },
-            {
-              path: "verify-email",
-              element: <VerifyEmail />,
             },
           ],
         },
         {
           path: "main",
-          element: <Dashboard />,
+          element: (
+            <ProtectedRoute>
+              <DashboardLayout />
+            </ProtectedRoute>
+          ),
           children: [
             {
               path: "",
@@ -64,7 +60,7 @@ function App() {
             },
             {
               path: "portfolio",
-              element: <MyPortfolio />,
+              element: <Portfolio />,
             },
             {
               path: "group",
@@ -90,9 +86,19 @@ function App() {
         },
       ],
     },
+
+    {
+      path: "*",
+      element: <h1>Page not found: 404</h1>,
+    },
   ]);
 
-  return <RouterProvider router={router} />;
+  return (
+    <QueryClientProvider client={queryClient}>
+      <RouterProvider router={router} />
+      <ReactQueryDevtools />
+    </QueryClientProvider>
+  );
 }
 
 export default App;

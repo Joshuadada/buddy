@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Outlet } from "react-router-dom";
-import Header from "@/components/Header";
-import { Sidebar } from "@/components/Sidebar";
-import { currentPage, navItems } from "@/utilities";
 
-const Dashboard = () => {
+import { currentPage, navItems } from "@/constants";
+import { Sidebar } from "@/components";
+import Header from "@/components/Header";
+
+export const DashboardLayout = () => {
   const [pageTitle, setPageTitle] = useState(currentPage());
   const [sidebarStatus, setSidebarStatus] = useState(false);
 
@@ -26,5 +27,3 @@ const Dashboard = () => {
     </div>
   );
 };
-
-export default Dashboard;
