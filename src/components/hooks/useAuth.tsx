@@ -117,16 +117,17 @@ export const useSignup = ({
 > => {
   return useMutation({
     mutationFn: async (signupBean: SignupInput) => {
-      const response = await axiosInstance.post<{ data: SignupResponseData }>(
+      const response = await axiosInstance.post<SignupResponseData>(
         SIGNUP_URL,
         signupBean
       );
-      return response.data.data;
+      return response.data;
     },
     onSuccess: (data: SignupResponseData) => {
       cb?.();
-      console.log(data);
-      localStorage.setItem("token", data.token);
+      const token = data?.data?.token;
+      console.log(token);
+      localStorage.setItem("token", token);
     },
     onError: onShowError,
   });
