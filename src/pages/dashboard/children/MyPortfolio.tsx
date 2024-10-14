@@ -78,7 +78,7 @@ const MyPortfolio = () => {
                 </div>
 
                 <div className="bg-white rounded-lg md:rounded-xl lg:rounded-2xl p-2 md:p-4 lg:p-6">
-                    <div className="flex items-center justify-between gap-3">
+                    <div className="flex items-center justify-between gap-3 flex-wrap">
                         <h4 className="text-[#3B3B45] font-bold tex-sm sm:text-base md:text-lg lg:text-xl">Overview</h4>
 
                         <div className="flex gap-1 md:gap-2">

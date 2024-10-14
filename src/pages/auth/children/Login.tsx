@@ -45,7 +45,7 @@ const Login = () => {
                                     <FormItem>
                                         <label className="text-[#5B6871] text-[0.6rem] md:text-xs lg:test-sm" htmlFor="">Email</label>
                                         <FormControl>
-                                            <Input icon={EmailIcon}placeholder="Seyi@zojatech.com" 
+                                            <Input icon={EmailIcon} placeholder="Seyi@zojatech.com" 
                                             {...field} />
                                         </FormControl>
 
