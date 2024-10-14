@@ -5,10 +5,13 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { Link } from "react-router-dom"
 import { z } from "zod"
+import UserIcon from "../../../assets/icons/userIcon.svg"
+import EmailIcon from "../../../assets/icons/emaiIcon.svg"
+import PasswordIcon from "../../../assets/icons/passwordIcon.svg"
 
 const formSchema = z.object({
-    firstName: z.string(),
-    lastName: z.string(),
+    firstName: z.string().min(1),
+    lastName: z.string().min(1),
     email: z.string().email(),
     password: z.string().regex(/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,16}$/, {
         message: 'Invalid password format'
@@ -39,7 +42,7 @@ const Signup = () => {
 
                 <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="mt-2">
-                        <div className="flex items-center gap-1 md:gap-2 lg:gap-3">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-1 md:gap-2 lg:gap-3">
                             <div>
                                 <FormField
                                     control={form.control}
@@ -48,7 +51,7 @@ const Signup = () => {
                                         <FormItem>
                                             <label className="text-[#5B6871] text-[0.6rem] md:text-xs lg:test-sm" htmlFor="">First Name</label>
                                             <FormControl>
-                                                <Input type="text" placeholder="Seyi" {...field} />
+                                                <Input icon={UserIcon} placeholder="Seyi" {...field} />
                                             </FormControl>
 
                                             <FormMessage />
@@ -65,7 +68,7 @@ const Signup = () => {
                                         <FormItem>
                                             <label className="text-[#5B6871] text-[0.6rem] md:text-xs lg:test-sm" htmlFor="">Last Name</label>
                                             <FormControl>
-                                                <Input type="text" placeholder="Ajayi" {...field} />
+                                                <Input icon={UserIcon} placeholder="Ajayi" {...field} />
                                             </FormControl>
 
                                             <FormMessage />
@@ -83,7 +86,7 @@ const Signup = () => {
                                     <FormItem>
                                         <label className="text-[#5B6871] text-[0.6rem] md:text-xs lg:test-sm" htmlFor="">Email</label>
                                         <FormControl>
-                                            <Input type="email" placeholder="Seyi@zojatech.com" {...field} />
+                                            <Input icon={EmailIcon} placeholder="Seyi@zojatech.com" {...field} />
                                         </FormControl>
 
                                         <FormMessage />
@@ -100,7 +103,7 @@ const Signup = () => {
                                     <FormItem>
                                         <label className="text-[#5B6871] text-[0.6rem] md:text-xs lg:test-sm" htmlFor="">Password</label>
                                         <FormControl>
-                                            <Input type="password" placeholder="***********" {...field} />
+                                            <Input type="password" icon={PasswordIcon} placeholder="***********" {...field} />
                                         </FormControl>
 
                                         <FormMessage />

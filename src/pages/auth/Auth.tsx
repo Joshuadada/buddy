@@ -25,7 +25,7 @@ const Auth = () => {
                     <div className="flex items-center gap-1 sm:gap-2 md:gap-4">
                         <svg className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="12" cy="12" r="12" fill="#FF8600" />
-                            <path d="M7.3335 12L10.6668 15.3334L17.3335 8.66669" stroke="white" strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7.3335 12L10.6668 15.3334L17.3335 8.66669" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
 
                         <p className="text-[#5B6871] flex-1 text-sm md:text-base lg:text-lg">Track real-time overview of company’s financial performance.</p>
@@ -34,7 +34,7 @@ const Auth = () => {
                     <div className="flex items-center gap-1 sm:gap-2 md:gap-4">
                         <svg className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="12" cy="12" r="12" fill="#FF8600" />
-                            <path d="M7.3335 12L10.6668 15.3334L17.3335 8.66669" stroke="white" strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7.3335 12L10.6668 15.3334L17.3335 8.66669" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
 
                         <p className="text-[#5B6871] flex-1 text-sm md:text-base lg:text-lg">Track created projects budget against actual revenue and expenses.</p>
@@ -43,7 +43,7 @@ const Auth = () => {
                     <div className="flex items-center gap-1 sm:gap-2 md:gap-4">
                         <svg className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="12" cy="12" r="12" fill="#FF8600" />
-                            <path d="M7.3335 12L10.6668 15.3334L17.3335 8.66669" stroke="white" strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7.3335 12L10.6668 15.3334L17.3335 8.66669" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
 
                         <p className="text-[#5B6871] flex-1 text-sm md:text-base lg:text-lg">Highlighted reports on budget deficit and surplus, accounting dimensions, balance sheets and real-time sales margin estimation.</p>

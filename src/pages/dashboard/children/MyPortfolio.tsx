@@ -2,6 +2,12 @@ import { ChartConfig, ChartContainer, ChartTooltip, ChartTooltipContent } from "
 import { BarChart, CartesianGrid, XAxis, Bar } from "recharts"
 import Avartar from "../../../assets/images/avartar.svg"
 import ChartImg from "../../../assets/images/chart.svg"
+import NewsImg1 from "../../../assets/images/newsImg1.svg"
+import NewsImg2 from "../../../assets/images/newsImg2.svg"
+import NewsImg3 from "../../../assets/images/newsImg3.svg"
+import InstagramImg from "../../../assets/images/instagramImg.svg"
+import FacebookImg from "../../../assets/images/facebookImg.svg"
+import LinkedinImg from "../../../assets/images/linkedinImg.svg"
 
 const chartData = [
     { month: "January", robbinHood: 186, amreitrade: 80 },
@@ -114,7 +120,7 @@ const MyPortfolio = () => {
                                 <div className="text-[#3B3B45] font-medium text-[0.6rem] md:text-xs lg:text-sm bg-[#F6F6F6] py-0.5 md:py-1 px-1.5 md:px-2.5 rounded-lg md:rounded-xl lg:rounded-2xl">❤️ 260</div>
                                 <div className="text-[#3B3B45] font-medium text-[0.6rem] md:text-xs lg:text-sm bg-[#F6F6F6] py-0.5 md:py-1 px-1.5 md:px-2.5 rounded-lg md:rounded-xl lg:rounded-2xl flex gap-0.5 md:gap-1 items-center">
                                     <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_1_258)">
+                                        <g clipPath="url(#clip0_1_258)">
                                             <path d="M15 4.59207V11.344C15 12.4974 14.0749 13.4361 12.9378 13.4361H6.39514L2.0549 16.5V13.4361C0.921112 13.4322 0 12.4951 0 11.344V4.59207C0 3.43853 0.92514 2.5 2.06223 2.5H12.9378C14.0749 2.5 15 3.43853 15 4.59207Z" fill="#FFB800" />
                                             <path d="M16 4.6043V11.3957C16 12.5559 15.0135 13.5 13.801 13.5H8V2.5H13.801C15.0135 2.5 16 3.44402 16 4.6043Z" fill="#FF8600" />
                                             <path d="M5 5.5H12V6.5H5V5.5Z" fill="white" />
@@ -135,7 +141,7 @@ const MyPortfolio = () => {
                                 </div>
                                 <div className="text-[#3B3B45] font-medium text-[0.6rem] md:text-xs lg:text-sm bg-[#F6F6F6] py-0.5 md:py-1 px-1.5 md:px-2.5 rounded-lg md:rounded-xl lg:rounded-2xl flex gap-0.5 md:gap-1 items-center">
                                     <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_1_270)">
+                                        <g clipPath="url(#clip0_1_270)">
                                             <path d="M16 6.49746L8.75 0.5V4.16468C6.57562 4.27346 4.59781 5.13524 3.07469 6.49746C1.18844 8.18414 0 10.6376 0 13.3751V16.5H0.9375C0.9375 12.2774 4.37219 8.84181 8.59375 8.84181H8.75V12.4949L16 6.49746Z" fill="#FF641A" />
                                             <path d="M8.75 12.4959V8.84375H8.59375C4.37219 8.84375 0.9375 12.2784 0.9375 16.5H0V13.3759C0 10.6391 1.18844 8.18625 3.07469 6.5H16L8.75 12.4959Z" fill="#F03800" />
                                         </g>
@@ -160,7 +166,7 @@ const MyPortfolio = () => {
                                 <div className="text-[#3B3B45] font-medium text-[0.6rem] md:text-xs lg:text-sm bg-[#F6F6F6] py-0.5 md:py-1 px-1.5 md:px-2.5 rounded-lg md:rounded-xl lg:rounded-2xl">❤️ 260</div>
                                 <div className="text-[#3B3B45] font-medium text-[0.6rem] md:text-xs lg:text-sm bg-[#F6F6F6] py-0.5 md:py-1 px-1.5 md:px-2.5 rounded-lg md:rounded-xl lg:rounded-2xl flex gap-0.5 md:gap-1 items-center">
                                     <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_1_258)">
+                                        <g clipPath="url(#clip0_1_258)">
                                             <path d="M15 4.59207V11.344C15 12.4974 14.0749 13.4361 12.9378 13.4361H6.39514L2.0549 16.5V13.4361C0.921112 13.4322 0 12.4951 0 11.344V4.59207C0 3.43853 0.92514 2.5 2.06223 2.5H12.9378C14.0749 2.5 15 3.43853 15 4.59207Z" fill="#FFB800" />
                                             <path d="M16 4.6043V11.3957C16 12.5559 15.0135 13.5 13.801 13.5H8V2.5H13.801C15.0135 2.5 16 3.44402 16 4.6043Z" fill="#FF8600" />
                                             <path d="M5 5.5H12V6.5H5V5.5Z" fill="white" />
@@ -181,7 +187,7 @@ const MyPortfolio = () => {
                                 </div>
                                 <div className="text-[#3B3B45] font-medium text-[0.6rem] md:text-xs lg:text-sm bg-[#F6F6F6] py-0.5 md:py-1 px-1.5 md:px-2.5 rounded-lg md:rounded-xl lg:rounded-2xl flex gap-0.5 md:gap-1 items-center">
                                     <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_1_270)">
+                                        <g clipPath="url(#clip0_1_270)">
                                             <path d="M16 6.49746L8.75 0.5V4.16468C6.57562 4.27346 4.59781 5.13524 3.07469 6.49746C1.18844 8.18414 0 10.6376 0 13.3751V16.5H0.9375C0.9375 12.2774 4.37219 8.84181 8.59375 8.84181H8.75V12.4949L16 6.49746Z" fill="#FF641A" />
                                             <path d="M8.75 12.4959V8.84375H8.59375C4.37219 8.84375 0.9375 12.2784 0.9375 16.5H0V13.3759C0 10.6391 1.18844 8.18625 3.07469 6.5H16L8.75 12.4959Z" fill="#F03800" />
                                         </g>
@@ -281,12 +287,12 @@ const MyPortfolio = () => {
                 </div>
             </div>
 
-            <div className="w-80">
+            <div className="xl:w-80 flex flex-col gap-2 md:gap-3 lg:gap-4 mt-2 md:mt-3 lg:mt-4 xl:mt-0">
                 <div className="bg-white rounded-lg md:rounded-xl lg:rounded-2xl p-2 md:p-4 lg:p-6">
                     <h4 className="text-[#3B3B45] font-bold tex-sm sm:text-base md:text-lg lg:text-xl">Watchlist</h4>
 
                     <div className="flex flex-col gap-1 md-gap-2 lg:gap-3 mt-2 md:mt-3 lg:mt-4">
-                        <div className="flex items-center gap-1 md:gap-2 bg-[#F6F6F6] px-2 md:px-3 lg:px-4 py-1 md:py-2 lg:py-3">
+                        <div className="flex items-center justify-between gap-1 md:gap-2 bg-[#F6F6F6] px-2 md:px-3 lg:px-4 py-1 md:py-2 lg:py-3">
                             <div>
                                 <div className="flex items-center gap-3 sm:gap-4 md:gap-5 lg:gap-6">
                                     <h4 className="text-[#3B3B45] font-semibold text-sm md:text-base lg:text-lg">AAPL</h4>
@@ -302,7 +308,7 @@ const MyPortfolio = () => {
                             <img src={ChartImg} alt="" />
                         </div>
 
-                        <div className="flex items-center gap-1 md:gap-2 bg-[#F6F6F6] px-2 md:px-3 lg:px-4 py-1 md:py-2 lg:py-3">
+                        <div className="flex items-center justify-between gap-1 md:gap-2 bg-[#F6F6F6] px-2 md:px-3 lg:px-4 py-1 md:py-2 lg:py-3">
                             <div>
                                 <div className="flex items-center gap-3 sm:gap-4 md:gap-5 lg:gap-6">
                                     <h4 className="text-[#3B3B45] font-semibold text-sm md:text-base lg:text-lg">BPL</h4>
@@ -316,6 +322,72 @@ const MyPortfolio = () => {
                             </div>
 
                             <img src={ChartImg} alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="bg-white rounded-lg md:rounded-xl lg:rounded-2xl p-2 md:p-4 lg:p-6">
+                    <h4 className="text-[#3B3B45] font-bold tex-sm sm:text-base md:text-lg lg:text-xl">Revenue</h4>
+
+                    <div className="flex flex-col gap-1 md:gap-2 lg:gap-3 mt-2 md:mt-3 lg:mt-4">
+                        <div className="flex items-center gap-3 justify-between border border-[#F1F1F1] rounded-md md:rounded-lg lg:rounded-xl py-1 md:py-2 lg:py-3 px-2 md:px-3 lg:px-4">
+                            <div>
+                                <h5 className="text-[#3B3B45] text-sm md:text-base lg:text-lg font-semibold">$4,000</h5>
+                                <p className="text-[#A3A3A6] text-[0.5rem] md:text-[0.6rem] lg:text-xs">Recently Added Pages</p>
+                            </div>
+
+                           <img src={FacebookImg} alt="" />
+                        </div>
+
+                        <div className="flex items-center gap-3 justify-between border border-[#F1F1F1] rounded-md md:rounded-lg lg:rounded-xl py-1 md:py-2 lg:py-3 px-2 md:px-3 lg:px-4">
+                            <div>
+                                <h5 className="text-[#3B3B45] text-sm md:text-base lg:text-lg font-semibold">$2,120</h5>
+                                <p className="text-[#A3A3A6] text-[0.5rem] md:text-[0.6rem] lg:text-xs">Video Monetization</p>
+                            </div>
+
+                            <img src={InstagramImg} alt="" />
+                        </div>
+
+                        <div className="flex items-center gap-3 justify-between border border-[#F1F1F1] rounded-md md:rounded-lg lg:rounded-xl py-1 md:py-2 lg:py-3 px-2 md:px-3 lg:px-4">
+                            <div>
+                                <h5 className="text-[#3B3B45] text-sm md:text-base lg:text-lg font-semibold">$1,752</h5>
+                                <p className="text-[#A3A3A6] text-[0.5rem] md:text-[0.6rem] lg:text-xs">Community Buildup</p>
+                            </div>
+
+                            <img src={LinkedinImg} alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="bg-white rounded-lg md:rounded-xl lg:rounded-2xl p-2 md:p-4 lg:p-6">
+                    <h4 className="text-[#3B3B45] font-bold tex-sm sm:text-base md:text-lg lg:text-xl">Trending News</h4>
+
+                    <div className="flex flex-col gap-1 md:gap-2 lg:gap-3 mt-2 md:mt-3 lg:mt-4">
+                        <div className="flex items-center gap-1 md:gap-2 border border-[#F1F1F1] rounded-md md:rounded-lg lg:rounded-xl py-1 md:py-2 lg:py-3 px-2 md:px-3 lg:px-4">
+                            <img src={NewsImg1} alt="" />
+
+                            <div>
+                                <h5 className="text-[#3B3B45] text-sm md:text-base lg:text-lg font-semibold">Russia & Ukraine War</h5>
+                                <p className="text-[#A3A3A6] text-[0.5rem] md:text-[0.6rem] lg:text-xs">Marketing is evolving. It's chang...</p>
+                            </div>
+                        </div>
+
+                        <div className="flex items-center gap-1 md:gap-2 border border-[#F1F1F1] rounded-md md:rounded-lg lg:rounded-xl py-1 md:py-2 lg:py-3 px-2 md:px-3 lg:px-4">
+                            <img src={NewsImg2} alt="" />
+
+                            <div>
+                                <h5 className="text-[#3B3B45] text-sm md:text-base lg:text-lg font-semibold">Elon Musk bought Twitter</h5>
+                                <p className="text-[#A3A3A6] text-[0.5rem] md:text-[0.6rem] lg:text-xs">Twitter is the most useful social pl...</p>
+                            </div>
+                        </div>
+
+                        <div className="flex items-center gap-1 md:gap-2 border border-[#F1F1F1] rounded-md md:rounded-lg lg:rounded-xl py-1 md:py-2 lg:py-3 px-2 md:px-3 lg:px-4">
+                            <img src={NewsImg3} alt="" />
+
+                            <div>
+                                <h5 className="text-[#3B3B45] text-sm md:text-base lg:text-lg font-semibold">Fuel Crisis Everywhere</h5>
+                                <p className="text-[#A3A3A6] text-[0.5rem] md:text-[0.6rem] lg:text-xs">Due to covid situation in 2020 the...</p>
+                            </div>
                         </div>
                     </div>
                 </div>

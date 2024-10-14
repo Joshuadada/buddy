@@ -5,6 +5,8 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { Link } from "react-router-dom"
 import { z } from "zod"
+import EmailIcon from "../../../assets/icons/emaiIcon.svg"
+import PasswordIcon from "../../../assets/icons/passwordIcon.svg"
 
 const formSchema = z.object({
     email: z.string().email(),
@@ -43,7 +45,8 @@ const Login = () => {
                                     <FormItem>
                                         <label className="text-[#5B6871] text-[0.6rem] md:text-xs lg:test-sm" htmlFor="">Email</label>
                                         <FormControl>
-                                            <Input type="email" placeholder="Seyi@zojatech.com" {...field} />
+                                            <Input icon={EmailIcon}placeholder="Seyi@zojatech.com" 
+                                            {...field} />
                                         </FormControl>
 
                                         <FormMessage />
@@ -60,7 +63,8 @@ const Login = () => {
                                     <FormItem>
                                         <label className="text-[#5B6871] text-[0.6rem] md:text-xs lg:test-sm" htmlFor="">Password</label>
                                         <FormControl>
-                                            <Input type="password" placeholder="***********" {...field} />
+                                            <Input icon={PasswordIcon} type="password" placeholder="***********" 
+                                            {...field} />
                                         </FormControl>
 
                                         <FormMessage />

@@ -66,7 +66,7 @@ const Dashboard = () => {
     return (
         <div className="flex h-full shadow-md">
             <div><Sidebar setPageTitle={setPageTitle} className="w-72" navItems={navItems} /></div>
-            <div className="flex-1 px-4 sm-px-6 md:px-8 overflow-auto">
+            <div className="flex-1 pl-4 sm-pl-6 md:pl-8 overflow-auto">
                 {/* <Header pageTitle={pageTitle} /> */}
                 <Outlet />
             </div>
